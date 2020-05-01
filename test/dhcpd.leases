@@ -1,0 +1,46 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.2.4-P2
+
+server-duid "\000\001\000\001& eS\000\014)U\267\275";
+
+lease 10.0.0.2 {
+  starts 5 2020/04/10 08:27:36;
+  ends 5 2020/04/10 10:57:36;
+  cltt 5 2020/04/10 08:27:36;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 00:50:56:3e:87:44;
+  uid "\001\000PV>\207D";
+}
+lease 10.0.0.3 {
+  starts 5 2020/04/10 08:27:39;
+  ends 5 2020/04/10 10:57:39;
+  cltt 5 2020/04/10 08:27:39;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 00:0c:29:b6:53:f1;
+  uid "\001\000\014)\266S\361";
+}
+lease 10.0.0.4 {
+  starts 5 2020/04/10 08:28:24;
+  ends 5 2020/04/10 10:58:24;
+  cltt 5 2020/04/10 08:28:24;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 00:0c:29:02:10:dd;
+  uid "\001\000\014)\002\020\335";
+  client-hostname "winx";
+}
+lease 10.0.0.5 {
+  starts 5 2020/04/10 08:32:28;
+  ends 5 2020/04/10 11:02:28;
+  cltt 5 2020/04/10 08:32:28;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 00:0c:29:ee:30:90;
+  uid "\001\000\014)\3560\220";
+}
