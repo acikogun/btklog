@@ -61,4 +61,4 @@ def btklog(kaynak, hedef):
                 click.echo(align(date_format(lease.end), 8), logstream, nl=False)
                 click.echo(mac_format(lease.ethernet), logstream)
 
-        click.echo(btklog_file + u" dosyası oluşturuldu.".encode('utf-8'))
+        click.echo(btklog_file + " dosyası oluşturuldu.")
