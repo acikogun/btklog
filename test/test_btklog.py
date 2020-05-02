@@ -4,13 +4,13 @@
 import unittest
 import datetime
 from click.testing import CliRunner
-from btklog import *
+import btklog
 
 
 def test_btklog():
     """Test main functionality"""
     runner = CliRunner()
-    result = runner.invoke(btklog, ['-k', 'test/dhcpd.leases', '-h', 'test'])
+    result = runner.invoke(btklog.btklog, ['-k', 'test/dhcpd.leases', '-h', 'test'])
     assert result.exit_code == 0
     assert u'log dosya' in result.output
 
@@ -21,7 +21,7 @@ class TestBtkLog(unittest.TestCase):
         Test that it can add 3 whitespaces to end of the string 'foo'
         """
         data = "foo"
-        result = align(data, 3)
+        result = btklog.align(data, 3)
         self.assertEqual(result, "foo   ")
 
 
@@ -30,7 +30,7 @@ class TestBtkLog(unittest.TestCase):
         Test 'date_format' function
         """
         data = datetime.datetime(2017, 11, 28, 23, 55, 59)
-        result =  date_format(data)
+        result =  btklog.date_format(data)
         self.assertEqual(result, "28.11.2017-23:55:59")
 
 
@@ -39,7 +39,7 @@ class TestBtkLog(unittest.TestCase):
         Test 'ip_format' function
         """
         data = "192.168.1.21"
-        result =  ip_format(data)
+        result =  btklog.ip_format(data)
         self.assertEqual(result, "192.168.1.21        ")
 
 
@@ -48,5 +48,5 @@ class TestBtkLog(unittest.TestCase):
         Test 'mac_format' function
         """
         data = "00:0c:29:b6:53:f1"
-        result =  mac_format(data)
+        result =  btklog.mac_format(data)
         self.assertEqual(result, "00-0c-29-b6-53-f1")
