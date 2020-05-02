@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 import codecs
 import os.path
 import re
@@ -29,6 +30,7 @@ setup_options = dict(
     long_description=read('README.md'),
     author='Ogun Acik',
     url='https://github.com/acikogun/btklog',
+    author_email='acikogun@gmail.com',
     install_requires=install_requires,
     entry_points='''
         [console_scripts]
@@ -39,7 +41,7 @@ setup_options = dict(
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
         'Natural Language :: Turkish',
-        'License :: Apache Software License',
+        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
