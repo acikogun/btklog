@@ -1,7 +1,7 @@
 # btklog
 [![Build Status](https://travis-ci.com/acikogun/btklog.svg?branch=master)](https://travis-ci.com/acikogun/btklog)
 [![CodeFactor](https://www.codefactor.io/repository/github/acikogun/btklog/badge)](https://www.codefactor.io/repository/github/acikogun/btklog)
-![PyPI](https://img.shields.io/pypi/v/btklog)
+[![PyPI](https://img.shields.io/pypi/v/btklog)](https://pypi.org/project/btklog)
 
 ISC DHCP sunucu IP dağıtım dosyalarından T.C. 5651 nolu yasaya uyumlu IP dağıtım kaydı üreten bir Python komut satırı programı.
 
