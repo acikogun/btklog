@@ -32,7 +32,7 @@ setup_options = dict(
     install_requires=install_requires,
     entry_points='''
         [console_scripts]
-        btklog=btklog:cli
+        btklog=btklog:btklog
     ''',
     license="Apache License 2.0",
     classifiers=[
