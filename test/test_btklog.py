@@ -12,7 +12,7 @@ def test_btklog():
     runner = CliRunner()
     result = runner.invoke(btklog, ['-k', 'test/dhcpd.leases', '-h', 'test'])
     assert result.exit_code == 0
-    assert 'log dosyası oluşturuldu' in result.output
+    assert u'log dosyası oluşturuldu'.encode('utf-8') in result.output
 
 
 class TestBtkLog(unittest.TestCase):
