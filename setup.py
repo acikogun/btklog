@@ -23,11 +23,12 @@ install_requires = [
 
 setup_options = dict(
     name='btklog',
-    version='1.0.1',
+    version='1.0.2',
     packages=find_packages(),
     include_package_data=True,
     description='Generates IP logs compatible with Turkey 5651 law from dhcpd.leases format.',
     long_description=read('README.md'),
+    long_description_content_type='text/markdown',
     author='Ogun Acik',
     url='https://github.com/acikogun/btklog',
     author_email='acikogun@gmail.com',
