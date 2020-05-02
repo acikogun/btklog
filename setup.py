@@ -23,7 +23,7 @@ install_requires = [
 
 setup_options = dict(
     name='btklog',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
     include_package_data=True,
     description='Generates IP logs compatible with Turkey 5651 law from dhcpd.leases format.',
