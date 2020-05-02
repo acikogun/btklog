@@ -4,13 +4,14 @@
 import unittest
 import datetime
 from click.testing import CliRunner
-import btklog
+from btklog import btklog
 
 
 def test_btklog():
     """Test main functionality"""
     runner = CliRunner()
-    result = runner.invoke(btklog.btklog, ['-k', 'test/dhcpd.leases', '-h', 'test'])
+    result = runner.invoke(btklog.btklog, ['-k', 'btklog/test/dhcpd.leases',
+    '-h', 'btklog/test'])
     assert result.exit_code == 0
     assert u'log dosya' in result.output
 
